@@ -1,8 +1,8 @@
 class Ccbar < Formula
   desc "Claude Code status bar for your terminal"
   homepage "https://github.com/gabrielferreira/ccbar"
-  url "https://github.com/gabrielferreira/ccbar/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "65f092971db233d34cf008eaa70dc24799e995fcaefacdb266515990ffdd6fa3"
+  url "https://github.com/gabrielferreira/ccbar/archive/refs/tags/v1.2.1.tar.gz"
+  sha256 "a684da087d0bec78e124b398d2d0b6d8d7f6a1e613fd73333e918e0b33f494a3"
   license "MIT"
 
   def install
@@ -17,6 +17,6 @@ class Ccbar < Formula
   end
 
   test do
-    assert_match "1.2.0", shell_output("#{bin}/ccbar help 2>&1")
+    assert_match "1.2.1", shell_output("#{bin}/ccbar help 2>&1")
   end
 end
